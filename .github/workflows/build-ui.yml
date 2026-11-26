@@ -40,6 +40,7 @@ jobs:
           PY
 
           echo "== unpack the stock rootfs as the helper's sysroot =="
+          mkdir -p scratch/fixtures
           unsquashfs -no-xattrs -d scratch/fixtures/v257 scratch/stock.squashfs
           ls -l scratch/fixtures/v257/lib/ld-linux-mipsn8.so.1
           ls -l scratch/fixtures/v257/lib/libc.so.6
