@@ -55,19 +55,31 @@ jobs:
 
       - name: Build mq_ui with the pinned musl-cross-make toolchain
         run: |
-          set -eux
-          docker build --progress=plain -t diskos-ui-builder ui
-          docker run --rm -u "$(id -u):$(id -g)" \
-            -v "$PWD/ui:/src" \
-            -v "$PWD/scratch:/scratch" \
-            -v "$PWD/vendor-src:/vendor-src" \
-            diskos-ui-builder \
-            sh -c 'make CROSS=$CROSS HB_CROSS=$HB_CROSS \
-                     STOCK_AV_HEADERS=/vendor-src/ffmpeg/ffmpeg-4.2.2.tar.xz \
-                     STOCK_SYSROOT=/scratch/fixtures/v257 \
-                   && ls -l mq_ui'
-          file ui/mq_ui
-          ls -l ui/mq_ui
+          set -eu
+          # The toolchain build downloads gcc/binutils/gmp/mpc/mpfr; a mirror can be flaky,
+          # so retry the whole build (docker layer cache makes a retry cheap).
+          for attempt in 1 2 3; do
+            echo "=== build attempt $attempt ==="
+            if docker build --progress=plain -t diskos-ui-builder ui; then
+              if docker run --rm -u "$(id -u):$(id -g)" \
+                   -v "$PWD/ui:/src" \
+                   -v "$PWD/scratch:/scratch" \
+                   -v "$PWD/vendor-src:/vendor-src" \
+                   diskos-ui-builder \
+                   sh -c 'make CROSS=$CROSS HB_CROSS=$HB_CROSS \
+                            STOCK_AV_HEADERS=/vendor-src/ffmpeg/ffmpeg-4.2.2.tar.xz \
+                            STOCK_SYSROOT=/scratch/fixtures/v257 \
+                          && ls -l mq_ui'; then
+                file ui/mq_ui
+                ls -l ui/mq_ui
+                exit 0
+              fi
+            fi
+            echo "=== attempt $attempt failed; retrying in 30s ==="
+            sleep 30
+          done
+          echo "build failed after 3 attempts"
+          exit 1
 
       - name: Upload the built UI binary
         uses: actions/upload-artifact@v4
