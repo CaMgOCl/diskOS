@@ -13,20 +13,60 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build mq_ui with the pinned musl-cross-make toolchain
-        working-directory: ui
+      # The UI carries a helper linked against the STOCK V2.57 libraries, so the build needs
+      # (a) the extracted stock rootfs and (b) the public FFmpeg 4.2.2 headers.
+      # Both are produced here from public sources and hash-checked.
+      - name: Prepare stock fixture and FFmpeg headers
         run: |
           set -eux
-          docker build --progress=plain -t diskos-ui-builder .
-          docker run --rm -u "$(id -u):$(id -g)" -v "$PWD:/src" diskos-ui-builder
-          file mq_ui
-          ls -l mq_ui
+          sudo apt-get update
+          sudo apt-get install -y squashfs-tools
+          python3 -m pip install --upgrade pip
+          python3 -m pip install -r requirements.txt
 
-      - name: Show the zh table size in the built binary
-        working-directory: ui
+          mkdir -p scratch vendor-src/ffmpeg
+
+          echo "== official firmware (public) =="
+          curl -sSL --retry 3 -o scratch/fw.zip \
+            https://fiio-firmware.fiio.net/DISC/SNOWSKY_DISC_update_20260909_v257.zip
+          echo "2bfad000609440bcbf492468e9e5f8f3d5e0bade797323431a15b5755688bfcf  scratch/fw.zip" | sha256sum -c -
+
+          echo "== decrypt + assemble the stock rootfs (the repo's own extractor) =="
+          python3 - <<'PY'
+          import sys
+          sys.path.insert(0, '.')
+          from diskos_installer.imagebuild import extract_stock_rootfs
+          extract_stock_rootfs('scratch/fw.zip', 'scratch/stock.squashfs', 'scratch/work')
+          PY
+
+          echo "== unpack the stock rootfs as the helper's sysroot =="
+          unsquashfs -no-xattrs -d scratch/fixtures/v257 scratch/stock.squashfs
+          ls -l scratch/fixtures/v257/lib/ld-linux-mipsn8.so.1
+          ls -l scratch/fixtures/v257/lib/libc.so.6
+          ls -l scratch/fixtures/v257/usr/lib/libavformat.so.58
+          ls -l scratch/fixtures/v257/usr/lib/libavcodec.so.58
+          ls -l scratch/fixtures/v257/usr/lib/libavutil.so.56
+
+          echo "== public FFmpeg headers (only headers are used) =="
+          curl -sSL --retry 3 -o vendor-src/ffmpeg/ffmpeg-4.2.2.tar.xz \
+            https://ffmpeg.org/releases/ffmpeg-4.2.2.tar.xz
+          echo "cb754255ab0ee2ea5f66f8850e1bd6ad5cac1cd855d0a2f4990fb8c668b0d29c  vendor-src/ffmpeg/ffmpeg-4.2.2.tar.xz" | sha256sum -c -
+
+      - name: Build mq_ui with the pinned musl-cross-make toolchain
         run: |
-          # the zh strings live in i18n_tables.c as octal-escaped UTF-8
-          grep -c 'T_ZH' i18n_tables.c || true
+          set -eux
+          docker build --progress=plain -t diskos-ui-builder ui
+          docker run --rm -u "$(id -u):$(id -g)" \
+            -v "$PWD/ui:/src" \
+            -v "$PWD/scratch:/scratch" \
+            -v "$PWD/vendor-src:/vendor-src" \
+            diskos-ui-builder \
+            sh -c 'make CROSS=$CROSS HB_CROSS=$HB_CROSS \
+                     STOCK_AV_HEADERS=/vendor-src/ffmpeg/ffmpeg-4.2.2.tar.xz \
+                     STOCK_SYSROOT=/scratch/fixtures/v257 \
+                   && ls -l mq_ui'
+          file ui/mq_ui
+          ls -l ui/mq_ui
 
       - name: Upload the built UI binary
         uses: actions/upload-artifact@v4
