@@ -1,0 +1,37 @@
+name: build-ui (zh-115)
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "i18n/zh-115"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build mq_ui with the pinned musl-cross-make toolchain
+        working-directory: ui
+        run: |
+          set -eux
+          docker build --progress=plain -t diskos-ui-builder .
+          docker run --rm -u "$(id -u):$(id -g)" -v "$PWD:/src" diskos-ui-builder
+          file mq_ui
+          ls -l mq_ui
+
+      - name: Show the zh table size in the built binary
+        working-directory: ui
+        run: |
+          # the zh strings live in i18n_tables.c as octal-escaped UTF-8
+          grep -c 'T_ZH' i18n_tables.c || true
+
+      - name: Upload the built UI binary
+        uses: actions/upload-artifact@v4
+        with:
+          name: mq_ui-zh115
+          path: |
+            ui/mq_ui
+          if-no-files-found: error
