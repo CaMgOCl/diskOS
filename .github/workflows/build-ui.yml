@@ -63,6 +63,7 @@ jobs:
             if docker build --progress=plain -t diskos-ui-builder ui; then
               if docker run --rm -u "$(id -u):$(id -g)" \
                    -v "$PWD/ui:/src" \
+                   -v "$PWD/tools:/tools" \
                    -v "$PWD/scratch:/scratch" \
                    -v "$PWD/vendor-src:/vendor-src" \
                    diskos-ui-builder \
