@@ -27,12 +27,14 @@ RUN git clone "$MCM_URL" /tmp/mcm \
     && cd /tmp/mcm && git checkout --detach "$MCM_COMMIT" \
     && test "$(git rev-parse HEAD)" = "$MCM_COMMIT" \
     && cp /tmp/mcm-config.mak config.mak \
+    && printf 'GNU_SITE = https://mirrors.kernel.org/gnu\nDL_CMD = wget -c --tries=10 --timeout=30 -O\n' >> config.mak \
     && make -j"$(nproc)" && make install \
     && cd / && rm -rf /tmp/mcm
 RUN git clone "$MCM_URL" /tmp/mcm \
     && cd /tmp/mcm && git checkout --detach "$MCM_COMMIT" \
     && test "$(git rev-parse HEAD)" = "$MCM_COMMIT" \
     && cat /tmp/mcm-config.mak /tmp/mcm-cxx.mak > config.mak \
+    && printf 'GNU_SITE = https://mirrors.kernel.org/gnu\nDL_CMD = wget -c --tries=10 --timeout=30 -O\n' >> config.mak \
     && make -j"$(nproc)" && make install \
     && cd / && rm -rf /tmp/mcm /tmp/mcm-config.mak /tmp/mcm-cxx.mak
 ENV CROSS=/opt/mipsel-n2008-musl-cross/bin/mipsel-linux-musl-
