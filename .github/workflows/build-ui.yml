@@ -2,9 +2,6 @@ name: build-ui (zh-115)
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - "i18n/zh-115"
 
 jobs:
   build:
@@ -53,33 +50,56 @@ jobs:
             https://ffmpeg.org/releases/ffmpeg-4.2.2.tar.xz
           echo "cb754255ab0ee2ea5f66f8850e1bd6ad5cac1cd855d0a2f4990fb8c668b0d29c  vendor-src/ffmpeg/ffmpeg-4.2.2.tar.xz" | sha256sum -c -
 
+      # The pinned toolchain image is expensive to build (~25 min). Cache it so later
+      # iterations only re-run the UI build.
+      - name: Restore cached toolchain image
+        id: toolchain-cache
+        uses: actions/cache@v4
+        with:
+          path: toolchain-image.tar.gz
+          key: toolchain-v1-${{ hashFiles('ui/Dockerfile', 'ui/toolchain/mcm-config.mak', 'ui/toolchain/mcm-cxx.mak') }}
+
       - name: Build mq_ui with the pinned musl-cross-make toolchain
         run: |
           set -eu
-          # The toolchain build downloads gcc/binutils/gmp/mpc/mpfr; a mirror can be flaky,
-          # so retry the whole build (docker layer cache makes a retry cheap).
+          if [ -f toolchain-image.tar.gz ]; then
+            echo "=== restoring cached toolchain image ==="
+            gunzip -c toolchain-image.tar.gz | docker load
+          else
+            # The toolchain build downloads gcc/binutils/gmp/mpc/mpfr; a mirror can be flaky,
+            # so retry the image build.
+            for attempt in 1 2 3; do
+              echo "=== toolchain image build attempt $attempt ==="
+              if docker build --progress=plain -t diskos-ui-builder ui; then break; fi
+              echo "=== attempt $attempt failed; retrying in 30s ==="
+              sleep 30
+            done
+            docker image inspect diskos-ui-builder >/dev/null
+            docker save diskos-ui-builder | gzip > toolchain-image.tar.gz
+            ls -l toolchain-image.tar.gz
+          fi
+
+          echo "=== building the UI ==="
           for attempt in 1 2 3; do
-            echo "=== build attempt $attempt ==="
-            if docker build --progress=plain -t diskos-ui-builder ui; then
-              if docker run --rm -u "$(id -u):$(id -g)" \
-                   -v "$PWD/ui:/src" \
-                   -v "$PWD/tools:/tools" \
-                   -v "$PWD/scratch:/scratch" \
-                   -v "$PWD/vendor-src:/vendor-src" \
-                   diskos-ui-builder \
-                   sh -c 'make CROSS=$CROSS HB_CROSS=$HB_CROSS \
-                            STOCK_AV_HEADERS=/vendor-src/ffmpeg/ffmpeg-4.2.2.tar.xz \
-                            STOCK_SYSROOT=/scratch/fixtures/v257 \
-                          && ls -l mq_ui'; then
-                file ui/mq_ui
-                ls -l ui/mq_ui
-                exit 0
-              fi
+            echo "=== ui build attempt $attempt ==="
+            if docker run --rm -u "$(id -u):$(id -g)" \
+                 -v "$PWD/ui:/src" \
+                 -v "$PWD/tools:/tools" \
+                 -v "$PWD/scratch:/scratch" \
+                 -v "$PWD/vendor-src:/vendor-src" \
+                 diskos-ui-builder \
+                 sh -c 'make CROSS=$CROSS HB_CROSS=$HB_CROSS \
+                          STOCK_AV_HEADERS=/vendor-src/ffmpeg/ffmpeg-4.2.2.tar.xz \
+                          STOCK_SYSROOT=/scratch/fixtures/v257 \
+                        && ls -l mq_ui'; then
+              file ui/mq_ui
+              ls -l ui/mq_ui
+              exit 0
             fi
             echo "=== attempt $attempt failed; retrying in 30s ==="
             sleep 30
           done
-          echo "build failed after 3 attempts"
+          echo "ui build failed after 3 attempts"
           exit 1
 
       - name: Upload the built UI binary
