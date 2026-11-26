@@ -17,6 +17,7 @@ FROM debian:12-slim
 RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential ca-certificates git wget xz-utils bzip2 patch rsync file \
         python3 \
+        gcc-mipsel-linux-gnu binutils-mipsel-linux-gnu \
     && rm -rf /var/lib/apt/lists/*
 
 ARG MCM_URL=https://github.com/richfelker/musl-cross-make.git
