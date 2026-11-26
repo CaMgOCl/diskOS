@@ -227,33 +227,33 @@ Couldn't change it - try again	无法更改，请重试	無法變更，請重試
 1 min	1分钟	1分鐘	1分	1분	1 min		1 min	1 Min.	1 min	1 мин
 2 min	2分钟	2分鐘	2分	2분	2 min		2 min	2 Min.	2 min	2 мин
 30 sec	30秒	30秒	30秒	30초	30 s		30 s	30 Sek.	30 s	30 сек
-Keep this orientation?						Manter esta orientação?				
-Reverting in						A reverter em				
-For demanding headphones										
-Digital filter shape										
-Evens out track volume										
-Dynamic Range Enhancement										
-Loads covers in advance										
-Text encoding of old tags										
-The colour of the Disc drawn on the startup screen. Set it to match yours.										
-Codec for Bluetooth headphones, as in the stock player. Applies the next time the headphones connect. If they lack the codec, SBC is used. AAC and LDAC are heavier for this player and may stutter.										
-Put diskOS's look and behaviour settings back to defaults. Music, Wi-Fi, Bluetooth, Last.fm, EQ and audio settings are kept.										
+Keep this orientation?	保持这个方向？					Manter esta orientação?				
+Reverting in	还原倒计时					A reverter em				
+For demanding headphones	适用于高要求耳机									
+Digital filter shape	数字滤波器类型									
+Evens out track volume	平衡曲目音量									
+Dynamic Range Enhancement	动态范围增强									
+Loads covers in advance	预先加载封面									
+Text encoding of old tags	旧标签的文本编码									
+The colour of the Disc drawn on the startup screen. Set it to match yours.	启动画面上绘制的 Disc 颜色，请设置为你机器的颜色。									
+Codec for Bluetooth headphones, as in the stock player. Applies the next time the headphones connect. If they lack the codec, SBC is used. AAC and LDAC are heavier for this player and may stutter.	蓝牙耳机的编解码器，与原厂播放器一致。下次耳机连接时生效。若耳机不支持该编解码器，将使用 SBC。AAC 和 LDAC 对这台播放器负担较重，可能出现卡顿。									
+Put diskOS's look and behaviour settings back to defaults. Music, Wi-Fi, Bluetooth, Last.fm, EQ and audio settings are kept.	将 diskOS 的外观和行为设置恢复为默认。音乐、无线网络、蓝牙、Last.fm、均衡器和音频设置会保留。									
 Play	播放	播放	再生	재생	Reproducir	Reproduzir	Riproduci	Abspielen	Lire	Играть
-Keep diskOS %s?										
-This update has been running for a few minutes. Keep it, or go back to the previous version (the device restarts).										
-Go back										
-Keep										
-Restart to go back to the previous version.										
-Couldn't save your choice. Try again.										
-Allow diskOS Updates										
-Not supported on this install										
-diskOS %s is available (you have %s). Updates are turned off in Settings. Turn on Allow diskOS Updates, or install it with the installer from github.com/b0hemia/diskos.										
-diskOS updates										
-Couldn't discard the update										
-Discard										
-Turn off updates?										
-Turning updates off discards the downloaded update.										
-Update discarded. Updates are off.										
+Keep diskOS %s?	保留 diskOS %s？									
+This update has been running for a few minutes. Keep it, or go back to the previous version (the device restarts).	此更新已运行几分钟。保留它，或回退到上一版本（设备将重启）。									
+Go back	回退									
+Keep	保留									
+Restart to go back to the previous version.	重启以回退到上一版本。									
+Couldn't save your choice. Try again.	无法保存你的选择，请重试。									
+Allow diskOS Updates	允许 diskOS 更新									
+Not supported on this install	此安装不支持									
+diskOS %s is available (you have %s). Updates are turned off in Settings. Turn on Allow diskOS Updates, or install it with the installer from github.com/b0hemia/diskos.	diskOS %s 可用（你当前为 %s）。设置中已关闭更新。请打开“允许 diskOS 更新”，或使用 github.com/b0hemia/diskos 的安装程序进行安装。									
+diskOS updates	diskOS 更新									
+Couldn't discard the update	无法放弃该更新									
+Discard	放弃									
+Turn off updates?	关闭更新？									
+Turning updates off discards the downloaded update.	关闭更新将放弃已下载的更新。									
+Update discarded. Updates are off.	已放弃更新。更新已关闭。									
 Tag Encoding	标签字符集	標籤字元集	タグの文字コード	태그 문자	Codificación de etiquetas	Codificação de etiquetas	Codifica dei tag	Tag-Kodierung	Encodage des tags	Кодировка тегов
 Stock Update Guide	官方更新指南	原廠更新指南	標準アップデート手順	기본 업데이트 정보	Guía de actualización original	Guia de atualização original	Guida aggiornamento stock	Anleitung Stock-Update	Guide de mise à jour d'origine	Руководство по обновлению
 Western	西欧	西歐	西欧	서유럽	Occidental	Ocidental	Occidentale	Westeuropäisch	Occidental	Западные
@@ -284,37 +284,37 @@ USB Storage	USB 存储	USB 儲存	USB ストレージ	USB 저장소	Almacenamien
 Open the card on a computer	在电脑上打开存储卡	在電腦上開啟記憶卡	コンピューターでカードを開く	컴퓨터에서 카드 열기	Abrir la tarjeta en un ordenador	Abrir o cartao num computador	Apri la scheda sul computer	Karte am Computer oeffnen	Ouvrir la carte sur un ordinateur	Открыть карту на компьютере
 USB Audio	USB Audio	USB Audio	USB Audio	USB Audio	USB Audio	USB Audio	USB Audio	USB Audio	USB Audio	USB Audio
 Play through an external USB DAC	通过外置 USB DAC 播放	透過外接 USB DAC 播放	外付け USB DAC で再生	외부 USB DAC로 재생	Reproduce con un DAC USB externo	Reproduza num DAC USB externo	Riproduci con un DAC USB esterno	Ueber externen USB-DAC abspielen	Lire via un DAC USB externe	Воспроизведение через внешний USB DAC
-Beam unavailable	投射不可用	傳送無法使用	Beamは利用できません	Beam을 사용할 수 없음	Beam no disponible	Beam indisponível	Beam non disponibile	Beam nicht verfügbar	Beam indisponible	Beam недоступен
-Couldn't start beaming	无法开始投射	無法開始傳送	Beamを開始できません	Beam을 시작할 수 없음	No se pudo iniciar Beam	Não foi possível iniciar o Beam	Impossibile avviare Beam	Beam konnte nicht starten	Impossible de lancer Beam	Не удалось начать Beam
+Beam unavailable	投送不可用	傳送無法使用	Beamは利用できません	Beam을 사용할 수 없음	Beam no disponible	Beam indisponível	Beam non disponibile	Beam nicht verfügbar	Beam indisponible	Beam недоступен
+Couldn't start beaming	无法开始投送	無法開始傳送	Beamを開始できません	Beam을 시작할 수 없음	No se pudo iniciar Beam	Não foi possível iniciar o Beam	Impossibile avviare Beam	Beam konnte nicht starten	Impossible de lancer Beam	Не удалось начать Beam
 Playback changed on receiver	接收设备已更改播放	接收裝置已變更播放	受信側で再生が変更されました	수신기에서 재생이 변경됨	La reproducción cambió en el receptor	A reprodução mudou no recetor	La riproduzione è cambiata sul ricevitore	Wiedergabe am Empfänger geändert	La lecture a changé sur le récepteur	Воспроизведение изменено на приёмнике
-Beam connection lost	投射连接已断开	傳送連線已中斷	Beam接続が切断されました	Beam 연결이 끊김	Conexión de Beam perdida	Ligação do Beam perdida	Connessione Beam persa	Beam-Verbindung verloren	Connexion Beam perdue	Соединение Beam потеряно
+Beam connection lost	投送连接已断开	傳送連線已中斷	Beam接続が切断されました	Beam 연결이 끊김	Conexión de Beam perdida	Ligação do Beam perdida	Connessione Beam persa	Beam-Verbindung verloren	Connexion Beam perdue	Соединение Beam потеряно
 Couldn't confirm the receiver stopped	无法确认接收设备已停止	無法確認接收裝置已停止	受信側の停止を確認できません	수신기 정지를 확인할 수 없음	No se pudo confirmar que el receptor se detuvo	Não foi possível confirmar que o recetor parou	Impossibile confermare l'arresto del ricevitore	Stopp des Empfängers nicht bestätigt	Arrêt du récepteur non confirmé	Не удалось подтвердить остановку приёмника
-Stop beaming to play this on the Disc	停止投射后才能在 Disc 上播放	停止傳送後才能在 Disc 上播放	このDiscで再生するにはBeamを停止してください	Disc에서 재생하려면 Beam을 중지하세요	Detén Beam para reproducir en el Disc	Pare o Beam para tocar no Disc	Interrompi Beam per riprodurre sul Disc	Beam beenden, um auf dem Disc zu spielen	Arrêtez Beam pour lire sur le Disc	Остановите Beam, чтобы играть на Disc
+Stop beaming to play this on the Disc	停止投送后才能在 Disc 上播放	停止傳送後才能在 Disc 上播放	このDiscで再生するにはBeamを停止してください	Disc에서 재생하려면 Beam을 중지하세요	Detén Beam para reproducir en el Disc	Pare o Beam para tocar no Disc	Interrompi Beam per riprodurre sul Disc	Beam beenden, um auf dem Disc zu spielen	Arrêtez Beam pour lire sur le Disc	Остановите Beam, чтобы играть на Disc
 Couldn't play that list	无法播放此列表	無法播放此清單	このリストを再生できません	이 목록을 재생할 수 없음	No se pudo reproducir esa lista	Não foi possível reproduzir essa lista	Impossibile riprodurre questa lista	Liste konnte nicht abgespielt werden	Impossible de lire cette liste	Не удалось воспроизвести список
 Queue is updating - try again	列表正在更新，请重试	清單正在更新，請重試	キューを更新中です。もう一度お試しください	목록을 새로 만드는 중 - 다시 시도하세요	La cola se está actualizando - inténtalo de nuevo	A fila está a atualizar - tente novamente	La coda si sta aggiornando - riprova	Warteschlange wird aktualisiert - erneut versuchen	File d'attente en cours de mise à jour - réessayez	Очередь обновляется - повторите попытку
 Couldn't play this track	无法播放此曲目	無法播放此曲目	この曲を再生できません	이 곡을 재생할 수 없음	No se pudo reproducir esta pista	Não foi possível reproduzir esta faixa	Impossibile riprodurre questo brano	Titel konnte nicht abgespielt werden	Impossible de lire ce titre	Не удалось воспроизвести трек
 Queue finished	播放列表已结束	播放清單已結束	キューの再生が終了しました	재생 목록 종료	La cola ha terminado	A fila terminou	Coda terminata	Warteschlange beendet	File d'attente terminée	Очередь закончилась
-This track can't be beamed	此曲目无法投射	此曲目無法傳送	この曲はBeamできません	이 곡을 Beam할 수 없음	Esta pista no se puede enviar con Beam	Esta faixa não pode ser enviada com o Beam	Questo brano non può essere inviato con Beam	Dieser Titel kann nicht gebeamt werden	Ce titre ne peut pas être diffusé avec Beam	Этот трек нельзя передать через Beam
+This track can't be beamed	此曲目无法投送	此曲目無法傳送	この曲はBeamできません	이 곡을 Beam할 수 없음	Esta pista no se puede enviar con Beam	Esta faixa não pode ser enviada com o Beam	Questo brano non può essere inviato con Beam	Dieser Titel kann nicht gebeamt werden	Ce titre ne peut pas être diffusé avec Beam	Этот трек нельзя передать через Beam
 No playable tracks left	没有可播放的曲目了	沒有可播放的曲目了	再生できる曲がありません	재생할 곡이 없음	No quedan pistas reproducibles	Não restam faixas reproduzíveis	Nessun brano riproducibile rimasto	Keine abspielbaren Titel mehr	Plus aucun titre lisible	Воспроизводимых треков не осталось
 Queue changed	播放列表已更改	播放清單已變更	キューが変更されました	재생 목록이 변경됨	La cola ha cambiado	A fila foi alterada	La coda è cambiata	Warteschlange geändert	File d'attente modifiée	Очередь изменилась
-Volume keys must use Adjust Volume to beam	投射前请把 Vol Keys 都改成 Adjust Volume	傳送前，Vol Keys 須選 Adjust Volume	Beamするには音量キーを Adjust Volume にしてください	Beam하려면 볼륨 키를 Adjust Volume으로 설정하세요	Las teclas de volumen deben usar Adjust Volume para usar Beam	As teclas de volume devem usar Adjust Volume para usar o Beam	I tasti volume devono usare Adjust Volume per usare Beam	Lautstärketasten müssen für Beam auf Adjust Volume stehen	Les touches de volume doivent utiliser Adjust Volume pour Beam	Для Beam клавиши громкости должны быть в режиме Adjust Volume
-Stop beaming to change this	停止投射后才能更改	停止傳送後才能變更	変更するにはBeamを停止してください	변경하려면 Beam을 중지하세요	Detén Beam para cambiar esto	Pare o Beam para alterar isto	Interrompi Beam per cambiarlo	Beam beenden, um dies zu ändern	Arrêtez Beam pour modifier ceci	Остановите Beam, чтобы изменить это
-Stopping beam to switch output	正在停止投射以更改输出	正在停止傳送以更改輸出	出力を切り替えるためBeamを停止しています	출력을 변경하려고 Beam을 중지하는 중	Deteniendo Beam para cambiar la salida	Parando o Beam para mudar a saída	Interruzione di Beam per cambiare uscita	Beam wird beendet, um die Ausgabe zu wechseln	Arrêt de Beam pour changer la sortie	Остановка Beam для смены выхода
-Disc started playing - beam ended	Disc 已开始播放，投射已结束	Disc 已開始播放，傳送已結束	Discが再生を始めたためBeamを終了しました	Disc가 재생을 시작해 Beam이 종료됨	El Disc empezó a reproducir: Beam terminado	O Disc começou a tocar: Beam encerrado	Il Disc ha iniziato a riprodurre: Beam terminato	Disc spielt: Beam beendet	Le Disc a démarré la lecture : Beam terminé	Disc начал воспроизведение - Beam завершён
-Source changed - beam ended	音源已更改，投射已结束	音源已變更，傳送已結束	ソースが変更されたためBeamを終了しました	소스 변경으로 Beam이 종료됨	Fuente cambiada: Beam terminado	Fonte alterada: Beam encerrado	Sorgente cambiata: Beam terminato	Quelle geändert: Beam beendet	Source modifiée : Beam terminé	Источник изменён - Beam завершён
+Volume keys must use Adjust Volume to beam	投送前请把 Vol Keys 都改成 Adjust Volume	傳送前，Vol Keys 須選 Adjust Volume	Beamするには音量キーを Adjust Volume にしてください	Beam하려면 볼륨 키를 Adjust Volume으로 설정하세요	Las teclas de volumen deben usar Adjust Volume para usar Beam	As teclas de volume devem usar Adjust Volume para usar o Beam	I tasti volume devono usare Adjust Volume per usare Beam	Lautstärketasten müssen für Beam auf Adjust Volume stehen	Les touches de volume doivent utiliser Adjust Volume pour Beam	Для Beam клавиши громкости должны быть в режиме Adjust Volume
+Stop beaming to change this	停止投送后才能更改	停止傳送後才能變更	変更するにはBeamを停止してください	변경하려면 Beam을 중지하세요	Detén Beam para cambiar esto	Pare o Beam para alterar isto	Interrompi Beam per cambiarlo	Beam beenden, um dies zu ändern	Arrêtez Beam pour modifier ceci	Остановите Beam, чтобы изменить это
+Stopping beam to switch output	正在停止投送以更改输出	正在停止傳送以更改輸出	出力を切り替えるためBeamを停止しています	출력을 변경하려고 Beam을 중지하는 중	Deteniendo Beam para cambiar la salida	Parando o Beam para mudar a saída	Interruzione di Beam per cambiare uscita	Beam wird beendet, um die Ausgabe zu wechseln	Arrêt de Beam pour changer la sortie	Остановка Beam для смены выхода
+Disc started playing - beam ended	Disc 已开始播放，投送已结束	Disc 已開始播放，傳送已結束	Discが再生を始めたためBeamを終了しました	Disc가 재생을 시작해 Beam이 종료됨	El Disc empezó a reproducir: Beam terminado	O Disc começou a tocar: Beam encerrado	Il Disc ha iniziato a riprodurre: Beam terminato	Disc spielt: Beam beendet	Le Disc a démarré la lecture : Beam terminé	Disc начал воспроизведение - Beam завершён
+Source changed - beam ended	音源已更改，投送已结束	音源已變更，傳送已結束	ソースが変更されたためBeamを終了しました	소스 변경으로 Beam이 종료됨	Fuente cambiada: Beam terminado	Fonte alterada: Beam encerrado	Sorgente cambiata: Beam terminato	Quelle geändert: Beam beendet	Source modifiée : Beam terminé	Источник изменён - Beam завершён
 Beam	Beam	Beam	Beam	Beam	Beam	Beam	Beam	Beam	Beam	Beam
-Beaming to	正在投射到	正在傳送到	送信先	재생 대상	Enviando a	Enviando para	Invio a	Sende an	Envoi vers	Передача на
+Beaming to	正在投送到	正在傳送到	送信先	재생 대상	Enviando a	Enviando para	Invio a	Sende an	Envoi vers	Передача на
 Searching...	正在搜索...	正在搜尋...	検索中...	검색 중...	Buscando...	Procurando...	Ricerca...	Suche...	Recherche...	Поиск...
 Looking for speakers and TVs on your Wi-Fi	正在你的无线网络中查找设备	正在你的無線網路中尋找裝置	Wi-Fi上のスピーカーとTVを探しています	Wi-Fi에서 기기를 찾는 중	Buscando altavoces y TV en tu Wi-Fi	Procurando caixas de som e TVs no seu Wi-Fi	Ricerca di altoparlanti e TV sul tuo Wi-Fi	Suche nach Lautsprechern und TVs in deinem WLAN	Recherche d'enceintes et de TV sur votre Wi-Fi	Поиск колонок и телевизоров в вашей сети Wi-Fi
 Search again	重新搜索	重新搜尋	再検索	다시 검색	Buscar de nuevo	Procurar de novo	Cerca di nuovo	Erneut suchen	Rechercher à nouveau	Искать снова
 No devices found	没有找到设备	沒有找到裝置	デバイスが見つかりません	기기를 찾을 수 없음	No se encontraron dispositivos	Nenhum dispositivo encontrado	Nessun dispositivo trovato	Keine Geräte gefunden	Aucun appareil trouvé	Устройства не найдены
 Use the same home Wi-Fi. Guest networks may block discovery.	请使用同一个家庭无线网络。其他网络可能无法搜索到设备。	請使用同一個家用無線網路。訪客網路可能無法搜尋到裝置。	同じ家庭のWi-Fiを使ってください。ゲストネットワークでは検出できない場合があります。	게스트 네트워크에서는 검색할 수 없습니다	Usa la misma Wi-Fi de casa. Las redes de invitados pueden bloquear la búsqueda.	Use o mesmo Wi-Fi de casa. Redes de convidados podem bloquear a busca.	Usa lo stesso Wi-Fi di casa. Le reti ospiti possono bloccare la ricerca.	Nutze dasselbe WLAN zu Hause. Gastnetze können die Suche blockieren.	Utilisez le même Wi-Fi que chez vous. Les réseaux invités peuvent bloquer la recherche.	Используйте домашнюю сеть Wi-Fi. Гостевые сети могут блокировать поиск.
-Connect to Wi-Fi to beam	连接无线网络后才能投射	連接無線網路後才能傳送	BeamするにはWi-Fiに接続してください	Beam하려면 Wi-Fi에 연결하세요	Conéctate al Wi-Fi para usar Beam	Conecte-se ao Wi-Fi para usar o Beam	Collegati al Wi-Fi per usare Beam	Für Beam mit WLAN verbinden	Connectez-vous au Wi-Fi pour utiliser Beam	Подключитесь к Wi-Fi для Beam
+Connect to Wi-Fi to beam	连接无线网络后才能投送	連接無線網路後才能傳送	BeamするにはWi-Fiに接続してください	Beam하려면 Wi-Fi에 연결하세요	Conéctate al Wi-Fi para usar Beam	Conecte-se ao Wi-Fi para usar o Beam	Collegati al Wi-Fi per usare Beam	Für Beam mit WLAN verbinden	Connectez-vous au Wi-Fi pour utiliser Beam	Подключитесь к Wi-Fi для Beam
 Speakers and TVs are found over your home Wi-Fi.	你的家庭无线网络中的设备会被找到。	裝置透過你的家用無線網路尋找。	スピーカーとTVはご家庭のWi-Fiで見つかります。	기기는 Wi-Fi로 찾습니다	Los altavoces y TV se encuentran por tu Wi-Fi de casa.	Caixas de som e TVs são encontradas pelo Wi-Fi de casa.	Altoparlanti e TV si trovano tramite il Wi-Fi di casa.	Lautsprecher und TVs werden über dein Heim-WLAN gefunden.	Les enceintes et TV se trouvent via votre Wi-Fi.	Колонки и телевизоры находятся через домашний Wi-Fi.
 Wi-Fi settings	无线网络设置	無線網路設定	Wi-Fi設定	Wi-Fi 설정	Ajustes de Wi-Fi	Ajustes de Wi-Fi	Impostazioni Wi-Fi	WLAN-Einstellungen	Réglages Wi-Fi	Настройки Wi-Fi
 Back	返回	返回	戻る	뒤로	Atrás	Voltar	Indietro	Zurück	Retour	Назад
 Music keeps playing on the Disc until it is ready.	音乐仍在 Disc 上播放，直到可用。	準備好之前音樂會繼續在 Disc 上播放。	準備ができるまでDiscで再生を続けます。	Disc에서 재생 중	La música sigue en el Disc hasta que esté listo.	A música continua no Disc até ficar pronto.	La musica continua sul Disc finché non è pronto.	Die Musik läuft auf dem Disc weiter, bis es bereit ist.	La musique continue sur le Disc jusqu'à ce que ce soit prêt.	Музыка играет на Disc, пока всё не будет готово.
-Stop beaming	停止投射	停止傳送	送信を停止	Beam 중지	Detener Beam	Parar Beam	Ferma Beam	Beam beenden	Arrêter Beam	Остановить Beam
+Stop beaming	停止投送	停止傳送	送信を停止	Beam 중지	Detener Beam	Parar Beam	Ferma Beam	Beam beenden	Arrêter Beam	Остановить Beam
 Search failed	无法搜索	搜尋失敗	検索に失敗しました	검색할 수 없음	Falló la búsqueda	A busca falhou	Ricerca non riuscita	Suche fehlgeschlagen	Échec de la recherche	Поиск не удался
 Couldn't look for devices. Try again.	无法查找设备。请重试。	無法尋找裝置。請重試。	デバイスを探せませんでした。もう一度お試しください。	기기를 검색할 수 없습니다. 다시 시도하세요.	No se pudo buscar dispositivos. Inténtalo de nuevo.	Não foi possível procurar dispositivos. Tente de novo.	Impossibile cercare i dispositivi. Riprova.	Geräte konnten nicht gesucht werden. Versuche es erneut.	Impossible de chercher des appareils. Réessayez.	Не удалось найти устройства. Повторите попытку.
 Switching output - try again	正在更改输出，请重试	正在切換輸出，請重試	出力を切り替え中です。もう一度お試しください	출력 변경 중, 다시 시도하세요	Cambiando la salida: inténtalo de nuevo	Trocando a saída: tente de novo	Cambio uscita in corso: riprova	Ausgabe wird gewechselt - bitte erneut versuchen	Changement de sortie : réessayez	Смена выхода - повторите попытку
@@ -398,57 +398,57 @@ Weather is off	天气已关闭	天氣已關閉	天気はオフです	날씨 꺼�
 No image saved	未保存图片	未儲存圖片	画像が保存されていません	저장된 이미지 없음	Sin imagen guardada	Sem imagem guardada	Nessuna immagine salvata	Kein Bild gespeichert	Aucune image enregistrée	Изображение не сохранено
 Sample Song	示例歌曲	範例歌曲	サンプル曲	샘플 곡	Pista de ejemplo	Faixa de exemplo	Brano di esempio	Beispieltitel	Titre d'exemple	Пример песни
 Sample Artist	示例艺术家	範例藝人	サンプルアーティスト	샘플 아티스트	Artista de ejemplo	Artista de exemplo	Artista di esempio	Beispielinterpret	Artiste d'exemple	Исполнитель
-Enter the PIN shown on										
-Del										
-Pair										
-Play on Disc										
-Wrong PIN										
-Receiver is in use										
-Connection timed out										
-Pairing removed										
-Could not verify this receiver										
-TV stop was not confirmed										
-Connection lost										
-Music stays paused. The TV may still be playing.										
-Choose the receiver to try again.										
-Forget pairing										
-Beam is stopping - try again										
-AirPlay - %s / 16 bit										
-AirPlay - %s / %d bit										
-Receiver volume is unavailable										
-Could not change playback										
-Pairing not accepted										
-Player restarted - press play										
-Pairing storage is unavailable										
-Receiver needs a password										
-Password-protected AirPlay 1 is unavailable.										
-Couldn't prepare the audio decoder										
-Try again.										
-Play next										
-Remove from Up Next										
-Skipped %u unsupported tracks										
-Choose an MP3, FLAC or PCM WAV track.										
-AAC / ALAC can't be beamed										
-Opus can't be beamed										
-Ogg audio can't be beamed										
-WMA can't be beamed										
-APE can't be beamed										
-DSD can't be beamed										
-SACD ISO can't be beamed										
-CUE track can't be beamed										
-CUE tracks can't be beamed										
-Play on Disc?										
-Only this track will play on Disc.										
-Continue the original queue on Disc.										
-The TV may still be playing. Stop it first.										
-You may hear the start before playback resumes.										
-Play this track										
-Keep beaming										
-Disc playback is unavailable										
-Volume unavailable										
+Enter the PIN shown on	输入设备上显示的 PIN 码：									
+Del	删除									
+Pair	配对									
+Play on Disc	在 Disc 上播放									
+Wrong PIN	PIN 码错误									
+Receiver is in use	接收设备正在使用									
+Connection timed out	连接超时									
+Pairing removed	已移除配对									
+Could not verify this receiver	无法验证此接收设备									
+TV stop was not confirmed	未能确认电视已停止									
+Connection lost	连接已断开									
+Music stays paused. The TV may still be playing.	音乐保持暂停。电视可能仍在播放。									
+Choose the receiver to try again.	选择接收设备重试。									
+Forget pairing	忘记配对									
+Beam is stopping - try again	投送正在停止，请重试									
+AirPlay - %s / 16 bit	AirPlay - %s / 16 位									
+AirPlay - %s / %d bit	AirPlay - %s / %d 位									
+Receiver volume is unavailable	接收设备音量不可用									
+Could not change playback	无法更改播放									
+Pairing not accepted	配对未被接受									
+Player restarted - press play	播放器已重启，请按播放									
+Pairing storage is unavailable	配对存储不可用									
+Receiver needs a password	接收设备需要密码									
+Password-protected AirPlay 1 is unavailable.	受密码保护的 AirPlay 1 不可用。									
+Couldn't prepare the audio decoder	无法准备音频解码器									
+Try again.	请重试。									
+Play next	下一首播放									
+Remove from Up Next	从接下来移除									
+Skipped %u unsupported tracks	已跳过 %u 首不支持的曲目									
+Choose an MP3, FLAC or PCM WAV track.	请选择一首 MP3、FLAC 或 PCM WAV 曲目。									
+AAC / ALAC can't be beamed	AAC / ALAC 无法投送									
+Opus can't be beamed	Opus 无法投送									
+Ogg audio can't be beamed	Ogg 音频无法投送									
+WMA can't be beamed	WMA 无法投送									
+APE can't be beamed	APE 无法投送									
+DSD can't be beamed	DSD 无法投送									
+SACD ISO can't be beamed	SACD ISO 无法投送									
+CUE track can't be beamed	CUE 曲目无法投送									
+CUE tracks can't be beamed	CUE 曲目无法投送									
+Play on Disc?	在 Disc 上播放？									
+Only this track will play on Disc.	仅这首曲目将在 Disc 上播放。									
+Continue the original queue on Disc.	在 Disc 上继续原播放队列。									
+The TV may still be playing. Stop it first.	电视可能仍在播放，请先停止。									
+You may hear the start before playback resumes.	恢复播放前你可能会听到开头的声音。									
+Play this track	播放这首曲目									
+Keep beaming	继续投送									
+Disc playback is unavailable	Disc 播放不可用									
+Volume unavailable	音量不可用									
 Loading chapters...	正在导入章节...	載入章節...	チャプターを読み込み中...	챕터 로드 중...	Cargando capitulos...	Carregando capitulos...	Caricamento capitoli...	Kapitel werden geladen...	Chargement des chapitres...	Загрузка глав...
 Chapters unavailable	章节不可用	章節無法使用	チャプターを利用できません	챕터를 사용할 수 없음	Capitulos no disponibles	Capitulos indisponiveis	Capitoli non disponibili	Kapitel nicht verfugbar	Chapitres indisponibles	Главы недоступны
-diskOS %s is available										
+diskOS %s is available	diskOS %s 可用									
 Downloading...	正在下载...	正在下載...	ダウンロード中...	다운로드 중...	Descargando...	A descarregar...	Download...	Wird geladen...	Telechargement...	Загрузка...
 Downloading... %d%%	正在下载... %d%%	正在下載... %d%%	ダウンロード中... %d%%	다운로드 중... %d%%	Descargando... %d%%	A descarregar... %d%%	Download... %d%%	Wird geladen... %d%%	Telechargement... %d%%	Загрузка... %d%%
 Verifying...	正在验证...	正在驗證...	検証中...	확인 중...	Verificando...	A verificar...	Verifica...	Wird geprueft...	Verification...	Проверка...
@@ -461,51 +461,51 @@ Pairing failed	配对失败	配對失敗	ペアリングに失敗	페어링 실�
 Trust failed	无法信任	信任失敗	信頼設定に失敗	신뢰 설정 실패	Error de confianza	Falha ao confiar	Attendibilità non riuscita	Vertrauen fehlgeschlagen	Échec de l'approbation	Ошибка доверия
 Connection failed	无法连接	連線失敗	接続に失敗	연결 실패	Error de conexión	Falha na ligação	Connessione non riuscita	Verbindung fehlgeschlagen	Échec de la connexion	Ошибка подключения
 Audio route failed	无法设置音频输出	音訊路由失敗	音声出力の切替に失敗	오디오 출력 전환 실패	Error de ruta de audio	Falha na rota de áudio	Audio non instradato	Audioroute fehlgeschlagen	Échec du routage audio	Ошибка маршрута звука
-diskOS %s is available (you have %s). Download and install it now?										
-Device name										
-Bluetooth name										
-Device nickname										
-Use original name										
-Use original name?										
-Use original										
-Resets look, behaviour, both Disc names and paired nicknames. Keeps music, pairings, Wi-Fi, Last.fm, EQ and audio. Reboot for network; Bluetooth on for nicknames.										
-Names are busy - try again										
-Resetting...										
-Saving name...										
-Name unchanged										
-Reset this name?										
-The remote device's name will be used. Pairing is kept.										
-Returns the Bluetooth name to SNOWSKY DISC.										
-Returns the network name to stock defaults after reboot.										
-Reset this name										
-Stock defaults										
-Active										
-Saved. Applies after reboot.										
-Saved. Applies when Bluetooth is available.										
-Reset partly completed. Nickname clearing is pending.										
-Couldn't start reset - nothing changed										
-Reset partly completed. Pending work will retry.										
-Settings and names reset. Restart to finish.										
-Couldn't save name										
-Name replaced, but saving is uncertain. Restart to check.										
-Name saved. Bluetooth apply is pending.										
-Name saved										
-Reset partly completed. Pending work will retry after restart. Bluetooth stays off if it was off. Network defaults apply after reboot.										
-Settings and names reset. Restart diskOS to finish. Network defaults apply after reboot.										
+diskOS %s is available (you have %s). Download and install it now?	diskOS %s 可用（你当前为 %s）。现在下载并安装？									
+Device name	设备名称									
+Bluetooth name	蓝牙名称									
+Device nickname	设备昵称									
+Use original name	使用原名称									
+Use original name?	使用原名称？									
+Use original	使用原名称									
+Resets look, behaviour, both Disc names and paired nicknames. Keeps music, pairings, Wi-Fi, Last.fm, EQ and audio. Reboot for network; Bluetooth on for nicknames.	重置外观、行为、两个 Disc 名称及已配对昵称。保留音乐、配对、无线网络、Last.fm、均衡器和音频。重启后应用网络设置；蓝牙开启后应用昵称。									
+Names are busy - try again	名称正忙，请重试									
+Resetting...	正在重置…									
+Saving name...	正在保存名称…									
+Name unchanged	名称未更改									
+Reset this name?	重置此名称？									
+The remote device's name will be used. Pairing is kept.	将使用远程设备的名称，配对保持不变。									
+Returns the Bluetooth name to SNOWSKY DISC.	将蓝牙名称恢复为 SNOWSKY DISC。									
+Returns the network name to stock defaults after reboot.	重启后将网络名称恢复为原厂默认。									
+Reset this name	重置此名称									
+Stock defaults	原厂默认									
+Active	生效中									
+Saved. Applies after reboot.	已保存，重启后生效。									
+Saved. Applies when Bluetooth is available.	已保存，蓝牙可用时生效。									
+Reset partly completed. Nickname clearing is pending.	重置部分完成，昵称清除待处理。									
+Couldn't start reset - nothing changed	无法开始重置，未做任何更改									
+Reset partly completed. Pending work will retry.	重置部分完成，待处理项将重试。									
+Settings and names reset. Restart to finish.	设置和名称已重置，重启以完成。									
+Couldn't save name	无法保存名称									
+Name replaced, but saving is uncertain. Restart to check.	名称已替换，但保存不确定，请重启查看。									
+Name saved. Bluetooth apply is pending.	名称已保存，蓝牙应用待处理。									
+Name saved	名称已保存									
+Reset partly completed. Pending work will retry after restart. Bluetooth stays off if it was off. Network defaults apply after reboot.	重置部分完成，待处理项将在重启后重试。若蓝牙原为关闭则保持关闭。网络默认设置在重启后生效。									
+Settings and names reset. Restart diskOS to finish. Network defaults apply after reboot.	设置和名称已重置，重启 diskOS 以完成。网络默认设置在重启后生效。									
 Settings reset. Turn on Bluetooth to clear nicknames.	设置已重置。请开启蓝牙以清除已配对设备的名字。	設定已重設。請開啟藍牙以清除已配對裝置的名字。	設定をリセットしました。Bluetoothをオンにするとニックネームを消去します。	설정을 초기화했습니다. 별명을 지우려면 블루투스를 켜세요.	Ajustes restablecidos. Activa el Bluetooth para borrar los apodos.	Definições repostas. Ative o Bluetooth para limpar as alcunhas.	Impostazioni ripristinate. Attiva il Bluetooth per cancellare i soprannomi.	Einstellungen zurückgesetzt. Schalte Bluetooth ein, um die Spitznamen zu löschen.	Réglages réinitialisés. Activez le Bluetooth pour effacer les surnoms.	Настройки сброшены. Включите Bluetooth, чтобы удалить псевдонимы.
-Saved. Reflash needed (1.2.2+).										
-Saved. Not active this boot.										
-Active now										
-Saved name is invalid. Stock defaults after reboot.										
-Reflash needed (1.2.2+).										
-Use for audio										
-Saved Bluetooth name is invalid. Edit or reset it.										
+Saved. Reflash needed (1.2.2+).	已保存，需要重新刷写（1.2.2+）。									
+Saved. Not active this boot.	已保存，本次启动不生效。									
+Active now	现已生效									
+Saved name is invalid. Stock defaults after reboot.	保存的名称无效，重启后使用原厂默认。									
+Reflash needed (1.2.2+).	需要重新刷写（1.2.2+）。									
+Use for audio	用于音频									
+Saved Bluetooth name is invalid. Edit or reset it.	保存的蓝牙名称无效，请编辑或重置。									
 Rename	重命名	重新命名	名前を変更	이름 변경	Renombrar	Renomear	Rinomina	Umbenennen	Renommer	Переименовать
 
 # Receiver return confirmation. Empty cells use the English fallback.
-Stop receiving and return to the Disc's music?					Dejar de recibir y volver a la musica del Disc?	Parar a rececao e voltar a musica do Disc?	Interrompere la ricezione e tornare alla musica del Disc?	Empfang beenden und zur Musik auf dem Disc wechseln?	Arreter la reception et revenir a la musique du Disc ?	
-Return					Volver	Voltar	Torna	Zuruck	Retour	
-Beam is stopping. Wait, then try again.	正在停止投射，请稍候再试	正在停止傳送，請稍候再試	Beamを停止しています。しばらくしてからもう一度お試しください	Beam을 중지하는 중입니다. 조금 후 다시 시도하세요	Beam se está deteniendo. Espera y vuelve a intentarlo.	O Beam está a parar. Aguarde e tente novamente.	Beam si sta interrompendo. Attendi e riprova.	Beam wird beendet. Kurz warten, dann erneut versuchen.	Beam s'arrête. Patientez, puis réessayez.	Beam останавливается. Подождите и повторите.
+Stop receiving and return to the Disc's music?	停止接收并返回 Disc 的音乐？				Dejar de recibir y volver a la musica del Disc?	Parar a rececao e voltar a musica do Disc?	Interrompere la ricezione e tornare alla musica del Disc?	Empfang beenden und zur Musik auf dem Disc wechseln?	Arreter la reception et revenir a la musique du Disc ?	
+Return	返回				Volver	Voltar	Torna	Zuruck	Retour	
+Beam is stopping. Wait, then try again.	正在停止投送，请稍候再试	正在停止傳送，請稍候再試	Beamを停止しています。しばらくしてからもう一度お試しください	Beam을 중지하는 중입니다. 조금 후 다시 시도하세요	Beam se está deteniendo. Espera y vuelve a intentarlo.	O Beam está a parar. Aguarde e tente novamente.	Beam si sta interrompendo. Attendi e riprova.	Beam wird beendet. Kurz warten, dann erneut versuchen.	Beam s'arrête. Patientez, puis réessayez.	Beam останавливается. Подождите и повторите.
 Connected	已连接	已連線	接続しました	연결됨	Conectado	Ligado	Connesso	Verbunden	Connecté	Подключено
 Connecting...	正在连接...	正在連線...	接続中...	연결 중...	Conectando...	A ligar...	Connessione...	Verbinde...	Connexion...	Подключение...
 Couldn't add network	无法添加网络	無法加入網路	ネットワークを追加できませんでした	네트워크를 추가할 수 없음	No se pudo añadir la red	Não foi possível adicionar a rede	Impossibile aggiungere la rete	Netzwerk konnte nicht hinzugefügt werden	Impossible d'ajouter le réseau	Не удалось добавить сеть
@@ -515,7 +515,7 @@ EQ read failed, try again	无法读取均衡器，请重试	無法讀取等化�
 Forget This Network	移除此网络	忘記此網路	このネットワークを削除	이 네트워크 삭제	Olvidar esta red	Esquecer esta rede	Dimentica questa rete	Dieses Netzwerk vergessen	Oublier ce réseau	Забыть эту сеть
 In Settings > Controls, set press, double press and long press to Adjust Volume.	请在 设置 > 控制 中把所有 Vol Keys 都改成 Adjust Volume	請在 設定 > 控制 中把所有 Vol Keys 都設為 Adjust Volume	設定 > コントロール で Vol Keys をすべて Adjust Volume にしてください	설정 > 조작에서 Vol Keys를 모두 Adjust Volume으로 설정하세요	En Ajustes > Controles, pon todas las Vol Keys en Adjust Volume.	Em Definições > Controlos, defina todas as Vol Keys como Adjust Volume.	In Impostazioni > Controlli, imposta tutte le voci Vol Keys su Adjust Volume.	Unter Einstellungen > Steuerung alle Vol Keys auf Adjust Volume stellen.	Dans Réglages > Commandes, réglez toutes les Vol Keys sur Adjust Volume.	В меню Настройки > Управление выберите Adjust Volume для всех Vol Keys.
 Open	开放	開放	なし	없음	Abierta	Aberta	Aperta	Offen	Ouvert	Открытая
-Set volume keys to beam	设置 Vol Keys 以投射	設定 Vol Keys 以傳送	Beam用に音量キーを設定	Beam용 볼륨 키 설정	Ajusta las teclas de volumen para Beam	Defina as teclas de volume para o Beam	Imposta i tasti volume per Beam	Lautstärketasten für Beam einstellen	Réglez les touches de volume pour Beam	Настройте клавиши громкости для Beam
+Set volume keys to beam	设置 Vol Keys 以投送	設定 Vol Keys 以傳送	Beam用に音量キーを設定	Beam용 볼륨 키 설정	Ajusta las teclas de volumen para Beam	Defina as teclas de volume para o Beam	Imposta i tasti volume per Beam	Lautstärketasten für Beam einstellen	Réglez les touches de volume pour Beam	Настройте клавиши громкости для Beam
 Wi-Fi settings not saved	无线网络设置未保存	無線網路設定未儲存	Wi-Fi設定を保存できませんでした	Wi-Fi 설정이 저장되지 않음	Ajustes de Wi-Fi no guardados	Definições de Wi-Fi não guardadas	Impostazioni Wi-Fi non salvate	WLAN-Einstellungen nicht gespeichert	Réglages Wi-Fi non enregistrés	Настройки Wi-Fi не сохранены
 Rescan for sort tags	重新扫描排序标签	重新掃描排序標籤	並べ替えタグを再スキャン	순서 태그 다시 검색	Reescanear etiquetas de orden	Reanalisar etiquetas de ordenação	Riscansiona tag di ordinamento	Sortier-Tags neu scannen	Réanalyser les tags de tri	Сканировать теги сортировки
 The Disc turns off in %d s to keep your music card safe.	Disc 将在 %d 秒后关机，以确保 microSD 卡安全。	為保護 microSD 卡，Disc 將在 %d 秒後關機。	microSD カードを守るため、%d 秒後に Disc の電源を切ります。	microSD 카드를 보호하기 위해 %d초 후 Disc를 종료합니다.	El Disc se apagará en %d s para proteger la tarjeta microSD.	O Disc desliga em %d s para proteger o cartão microSD.	Il Disc si spegne tra %d s per proteggere la scheda microSD.	Abschaltung in %d s, um die microSD-Karte zu schützen.	Le Disc s'éteint dans %d s pour protéger la carte microSD.	Disc выключится через %d с, чтобы защитить карту microSD.
